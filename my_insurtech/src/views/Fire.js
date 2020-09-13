@@ -8,6 +8,9 @@ function Fire() {
     }
         return (
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
+                <h1>
+                    Fire Insurance
+                </h1>
             <label>
                 State Abbreviation:
             </label>
