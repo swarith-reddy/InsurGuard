@@ -1,10 +1,11 @@
 import pandas as pd
-import disaster_type
+from app.disaster_type import get_fema_data
+
 pd.set_option('display.max_columns', None)
 
 def get_insurance_policy(state):
     try:
-        df = disaster_type.get_fema_data(state)
+        df = get_fema_data(state)
         
         if df['incidentType'].value_counts().idxmax() == 'Fire':
             message = """
