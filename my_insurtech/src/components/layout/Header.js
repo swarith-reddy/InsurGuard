@@ -118,7 +118,7 @@ const Header = ({
                       <NavLink to="#0" onClick={closeMenu}>Hurricane Insurance</NavLink>
                     </li>
                     <li>
-                      <NavLink to="#0" onClick={closeMenu}>Wildfire Insurance</NavLink>
+                      <NavLink to="/fire" onClick={closeMenu}>Wildfire Insurance</NavLink>
                     </li>
                     
                     
