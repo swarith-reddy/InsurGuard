@@ -8,7 +8,7 @@ function Flood() {
             State Abbreviation:
         </label>
         <input type="field" name="state"/>
-        <input type="submit" value="submit" onSubmit={req()}/>
+        <input type="submit" value="submit"/>
         </div>
     )
 }
