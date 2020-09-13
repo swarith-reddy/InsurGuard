@@ -6,13 +6,14 @@ import Button from '../components/elements/Button'
 
 function Fire() {
     function req(state) {
-        const response = axios.post(
+        axios.post(
             "http://localhost:8000/",
             {
                 "state":state
             }
-        )
-        console.log(response)
+        ).then(function (response) {
+            document.getElementById("name").innerHTML = response 
+        })
     }
         return (
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
@@ -23,8 +24,8 @@ function Fire() {
                 State Abbreviation:
             </label>
             <input type="field" name="state" id="hullo" placeholder="Ex. CA" value="CA"/>
-            <input type="submit" value="submit" onClick={req()}/>
-            <label>Placeholders</label>
+            <input type="submit" value="submit" onClick={req(document.getElementById("hullo").value)}/>
+            <label id="name">Placeholders</label>
             </div>
           );
 }
