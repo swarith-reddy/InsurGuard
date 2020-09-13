@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 import socket
 from app.insurance_policy import get_insurance_policy
-from app.disaster_type import get_fema_data
+from app.disaster_type import get_fema_json
 
 app = Flask(__name__.split('.')[0])
 
@@ -9,7 +9,7 @@ app = Flask(__name__.split('.')[0])
 def func():
     if request.method == 'POST':
         test = request.get_json(force=True)
-        return get_fema_data(test['state'])
+        return get_fema_json(test['state'])
     elif request.method == 'GET':
         test = request.get_json(force=True)
         return get_insurance_policy(test['state'])

@@ -3,12 +3,16 @@ import axios from 'axios'
 import NavLink from 'react-router-dom'
 
 function Fire() {
-    // function req() {
-    //     axios.get
-    // }
+    function req(state) {
+        axios.get
+    }
     return(
-        <div className="text-center">
-            <input type="text center"></input>
+        <div className="object-center">
+            <label>
+                State Abbreviation:
+            </label>
+            <input type="field" name="state"/>
+            <input type="submit" value="submit" onSubmit={req()}/>
         </div>
     )
 }

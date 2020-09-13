@@ -1,11 +1,11 @@
 import pandas as pd
-from app.disaster_type import get_fema_data
+from app.disaster_type import get_fema_json
 
 pd.set_option('display.max_columns', None)
 
 def get_insurance_policy(state):
     try:
-        df = get_fema_data(state)
+        df = get_fema_json(state)
         if df['incidentType'].value_counts().idxmax() == 'Fire':
             message = """
 1. Amica Mutual
