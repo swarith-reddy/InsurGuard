@@ -1,10 +1,14 @@
 import React from 'react'
+import axios from 'axios'
 import NavLink from 'react-router-dom'
 
 function Fire() {
+    // function req() {
+    //     axios.get
+    // }
     return(
-        <div className="container">
-            Hello
+        <div className="text-center">
+            <input type="text center"></input>
         </div>
     )
 }

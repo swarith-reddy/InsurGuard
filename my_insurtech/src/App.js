@@ -43,7 +43,7 @@ const App = () => {
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
           <AppRoute exact path="/fire" component={Fire} layout={LayoutDefault}/>
           <AppRoute exact path="/hurricane" component={Hurricane} layout={LayoutDefault}/>
-          <AppRoute exact path="/Flood" component={Flood} layout={LayoutDefault}/>
+          <AppRoute exact path="/flood" component={Flood} layout={LayoutDefault}/>
         </Switch>
       )} />
   );
