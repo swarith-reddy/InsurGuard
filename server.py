@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, request
 import socket
-from app.disaster_type import get_fima_data
 from app.insurance_policy import get_insurance_policy
 
 app = Flask(__name__.split('.')[0])
