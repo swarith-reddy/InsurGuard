@@ -74,7 +74,7 @@ const FeaturesSplit = ({
                   </h3>
                 <p className="m-0">
                   Using Webscraping, we will aggregate all of the best possible insurance options for you so you don't have to 
-                  worry about this stressful process. We can take care of it for you. 
+                  worry about this stressful process. We can take care of it for you.
                   </p>
               </div>
               <div className={
@@ -84,7 +84,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('../../assets/images/features-split-image-01.png')}
+                  src={require('../../assets/images/1-1.png')}
                   alt="Features split 01"
                   width={528}
                   height={396} />
