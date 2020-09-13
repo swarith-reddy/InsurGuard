@@ -4,7 +4,7 @@ pd.set_option('display.max_columns', None)
 
 def get_insurance_policy(state):
     try:
-        df = disaster_type.get_fema_data(state)
+        df = disaster_type.get_fema_dataframe(state)
         
         if df['incidentType'].value_counts().idxmax() == 'Fire':
             message = """
@@ -248,6 +248,4 @@ Fortunately, your area does not seem like it is faces a large threat from natura
 
 Source: https://www.bankrate.com/insurance/homeowners-insurance/best-home-insurance-companies/
             """
-            return message
-
-print(get_insurance_policy('CA'))
+            return e
