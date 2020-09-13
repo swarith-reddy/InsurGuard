@@ -11,9 +11,9 @@ def func():
         test = request.get_json(force=True)
         return get_fema_json(test['state'])
     elif request.method == 'GET':
-        test = request.get_json(force=True)
-        return get_insurance_policy(test['state'])
+        test = request.args['state']
+        return get_insurance_policy(test)
     
 
 if __name__ == "__main__":
-    app.run(host=socket.gethostbyname(socket.gethostname()), port=8000, debug=True)
+    app.run(host='localhost', port=8000, debug=True)
