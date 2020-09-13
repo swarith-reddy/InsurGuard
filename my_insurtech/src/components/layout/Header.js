@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from './partials/Logo';
 
 const propTypes = {
@@ -112,13 +112,13 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Flood Insurance</Link>
+                      <NavLink to="#0" onClick={closeMenu}>Flood Insurance</NavLink>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Hurricane Insurance</Link>
+                      <NavLink to="#0" onClick={closeMenu}>Hurricane Insurance</NavLink>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Wildfire Insurance</Link>
+                      <NavLink to="#0" onClick={closeMenu}>Wildfire Insurance</NavLink>
                     </li>
                     
                     
@@ -128,7 +128,7 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
+                        <NavLink to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</NavLink>
                       </li>
                     </ul>}
                 </div>
