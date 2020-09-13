@@ -24,7 +24,7 @@ function Fire() {
                 State Abbreviation:
             </label>
             <input type="field" name="state" id="hullo" placeholder="Ex. CA" value="CA"/>
-            <input type="submit" value="submit" onClick={req(document.getElementById("hullo").value)}/>
+            <button type="submit" value="submit" onClick={req("CA")}/>
             <label id="name">Placeholders</label>
             </div>
           );
