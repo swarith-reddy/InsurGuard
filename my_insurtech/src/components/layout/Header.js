@@ -112,10 +112,10 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <NavLink to="#0" onClick={closeMenu}>Flood Insurance</NavLink>
+                      <NavLink to="/Flood" onClick={closeMenu}>Flood Insurance</NavLink>
                     </li>
                     <li>
-                      <NavLink to="#0" onClick={closeMenu}>Hurricane Insurance</NavLink>
+                      <NavLink to="/hurricane" onClick={closeMenu}>Hurricane Insurance</NavLink>
                     </li>
                     <li>
                       <NavLink to="/fire" onClick={closeMenu}>Wildfire Insurance</NavLink>
